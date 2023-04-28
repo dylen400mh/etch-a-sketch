@@ -14,6 +14,8 @@ container.addEventListener("mouseup", () => {
 for (let i = 0; i < 256; i++) {
     const square = document.createElement("div");
     square.classList.add("square");
+    
+    // square turns red if mouse is held down
     square.addEventListener("mouseover", () => {
         if (isMouseDown) {
             square.classList.add("trail");
